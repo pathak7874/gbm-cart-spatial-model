@@ -1,6 +1,6 @@
 {
-  "title": "Spatial Fractional Reaction-Diffusion Model for Optimizing CAR-T Therapy in Glioblastoma",
-  "description": "Computational framework integrating fractional diffusion, tumor microenvironment barriers, and switchable CAR-T dynamics for glioblastoma immunotherapy optimization. NonCommercial license - commercial use requires separate agreement.",
+  "title": "gbm-cart-spatial-model: Spatial Fractional Reaction-Diffusion Model for Optimizing CAR-T Therapy in Glioblastoma",
+  "description": "Computational framework integrating fractional diffusion, tumor microenvironment barriers, and switchable CAR-T dynamics for glioblastoma immunotherapy optimization. Includes validated model code, sensitivity analysis, statistical testing, and publication-ready analysis suite. NonCommercial license (CC BY-NC-SA 4.0) - commercial use requires separate licensing agreement.",
   "creators": [
     {
       "name": "Harrison, Cassandra D.",
@@ -18,7 +18,9 @@
     "immunotherapy",
     "dose optimization",
     "partial differential equations",
-    "mathematical modeling"
+    "mathematical modeling",
+    "cancer research",
+    "biomedical engineering"
   ],
   "license": {
     "id": "CC-BY-NC-SA-4.0"
@@ -39,5 +41,6 @@
     {
       "identifier": "computational-biology"
     }
-  ]
+  ],
+  "notes": "Code validation and publication infrastructure assisted by Claude (Anthropic AI). Core mathematical model, parameter derivation, and scientific interpretation by Cassandra D. Harrison."
 }
