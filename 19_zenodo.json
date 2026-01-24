@@ -1,0 +1,43 @@
+{
+  "title": "Spatial Fractional Reaction-Diffusion Model for Optimizing CAR-T Therapy in Glioblastoma",
+  "description": "Computational framework integrating fractional diffusion, tumor microenvironment barriers, and switchable CAR-T dynamics for glioblastoma immunotherapy optimization. NonCommercial license - commercial use requires separate agreement.",
+  "creators": [
+    {
+      "name": "Harrison, Cassandra D.",
+      "affiliation": "BleuConsult LLC",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "keywords": [
+    "glioblastoma",
+    "GBM",
+    "CAR-T therapy",
+    "fractional diffusion",
+    "tumor microenvironment",
+    "computational oncology",
+    "immunotherapy",
+    "dose optimization",
+    "partial differential equations",
+    "mathematical modeling"
+  ],
+  "license": {
+    "id": "CC-BY-NC-SA-4.0"
+  },
+  "upload_type": "software",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.1158/0008-5472.CAN-07-1895",
+      "relation": "cites",
+      "scheme": "doi"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "cancer-research"
+    },
+    {
+      "identifier": "computational-biology"
+    }
+  ]
+}

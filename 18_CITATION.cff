@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Harrison"
+    given-names: "Cassandra D."
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "Fractional Reaction-Diffusion Model for Optimizing CAR-T Immunotherapy in Glioblastoma"
+version: 1.0.0
+date-released: 2026-01-24
+url: "https://github.com/[username]/gbm-cart-spatial-model"
+repository-code: "https://github.com/[username]/gbm-cart-spatial-model"
+license: CC-BY-NC-SA-4.0
+keywords:
+  - glioblastoma
+  - CAR-T therapy
+  - fractional diffusion
+  - tumor microenvironment
+  - computational oncology
+  - immunotherapy
+  - dose optimization

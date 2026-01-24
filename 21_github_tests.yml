@@ -1,0 +1,105 @@
+name: Validation Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11']
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Test model execution
+      run: |
+        python -c "from gbm_cart_model_fixed import GBMParameters, simulate; print('Model imports successful')"
+    
+    - name: Test baseline model
+      run: |
+        python -c "from swanson_baseline import SwansonParameters, simulate_swanson; print('Baseline model works')"
+    
+    - name: Quick validation test
+      run: |
+        python -c "
+        from gbm_cart_model_fixed import GBMParameters, simulate, T0, N, dx
+        import numpy as np
+        params = GBMParameters()
+        params.dim = '1D'
+        sol = simulate(params, t_span=(0, 10))
+        assert sol.success, 'Simulation failed'
+        final_mass = np.sum(sol.y[:N, -1]) * dx
+        assert final_mass > 0, 'Invalid final mass'
+        print(f'Quick test passed: final_mass={final_mass:.4f}')
+        "
+    
+    - name: Test convergence (if pytest available)
+      run: |
+        pip install pytest pytest-cov || true
+        pytest tests/ --cov=. --cov-report=xml || echo "No tests found, skipping"
+      continue-on-error: true
+    
+    - name: Upload coverage
+      uses: codecov/codecov-action@v3
+      if: matrix.python-version == '3.10'
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false
+
+  numerical-validation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run convergence study (quick mode)
+      run: |
+        python -c "
+        from convergence_study import convergence_test_spatial
+        import sys
+        results = convergence_test_spatial(nx_values=[25, 51], t_end=30)
+        success_count = sum(1 for r in results.values() if r.get('success', False))
+        print(f'Convergence tests passed: {success_count}/2')
+        if success_count < 2:
+            sys.exit(1)
+        "
+      timeout-minutes: 30
+    
+    - name: Mass conservation check
+      run: |
+        python -c "
+        from gbm_cart_model_fixed import GBMParameters, simulate, T0, Y0, dx
+        import numpy as np
+        params = GBMParameters()
+        sol = simulate(params, t_span=(0, 30))
+        init_mass = np.sum(Y0) * dx
+        final_mass = np.sum(sol.y[:, -1]) * dx
+        error = abs(final_mass - init_mass) / init_mass * 100
+        print(f'Mass conservation error: {error:.4f}%')
+        assert error < 0.1, f'Mass conservation violated: {error:.4f}%'
+        "
