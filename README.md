@@ -226,8 +226,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 ## Contact
 
 **Cassandra D. Harrison, MBA, MPH**  
-Principal Consultant, BleuConsult LLC  
-[Contact information]
+Principal Consultant, BleuConsult/AvaBleu Design LLC  
+bleuisresting@gmail.com
 
 ## References
 
