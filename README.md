@@ -35,7 +35,7 @@ This repository contains a comprehensive computational framework for modeling an
 ### Quick Install
 
 ```bash
-git clone https://github.com/[username]/gbm-cart-spatial-model.git
+git clone https://github.com/bleuradience/gbm-cart-spatial-model.git
 cd gbm-cart-spatial-model
 pip install -r requirements.txt
 ```
@@ -186,8 +186,8 @@ If you use this code in your research, please cite:
   year      = {2026},
   publisher = {Zenodo},
   version   = {1.0.0},
-  doi       = {10.5281/zenodo.XXXXXXX},
-  url       = {https://github.com/[username]/gbm-cart-spatial-model}
+  doi       = {10.5281/zenodo.18361371},
+  url       = {https://github.com/bleuradience/gbm-cart-spatial-model}
 }
 ```
 
